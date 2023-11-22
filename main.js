@@ -1,10 +1,15 @@
-const pEntrada = document.querySelector.Selector("#entrada");
-const btnAdicionar = document.querySelector.Selector("#adicionar");
-const btnLimpar = document.querySelector.Selector("#limpar");
-const olItens = document.querySelector.Selector("#itens");
+const pEntrada = document.querySelector("#entrada");
+const btnAdicionar = document.querySelector("#adicionar");
+const btnLimpar = document.querySelector("#limpar");
+const olItens = document.querySelector("#itens");
 
-const li = document.createElement("li");
-li.textContent = "Primeiro";
-console.log(li);
+adicionaElementoNaLista("Primeiro")
+adicionaElementoNaLista("Segundo")
+adicionaElementoNaLista("Terceiro")
 
-olItens.appendChild(li);
+
+function adicionaElementoNaLista(texto){
+    const li = document.createElement("li");
+    li.textContent = texto;
+    olItens.appendChild(li);
+}
